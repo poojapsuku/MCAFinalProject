@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+{% block styles %}
+
+<link rel="stylesheet"  href="{{url_for('.static', filename='css/util.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='css/main.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+<link rel="stylesheet"  href="{{url_for('.static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='vendor/animate/animate.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='vendor/select2/select2.min.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='images/icons/favicon.ico')}}">
+
+
+{% endblock %}
+
+</head>
+
+<div class="bg-contact2" style="background-image: url('/static/images/bg-02.jpeg');">
+<div class="container-contact2">
+    <div class="wrap-contact2">
+
+    <span class="contact2-form-title">  Prediction  </span>
+<div class="contact2-form validate-form" align="center">
+
+    <div>
+
+
+{% block content %}
+    {% if 0 in r %}
+        <div> <h4 class="display-4">Student Dropout chance is Low</h4></div>
+    {% else %}
+        <div> <h4 class="display-4">Student Dropout chance is High</h4></div>
+    {% endif %}
+{% endblock content %}
+
+</div>
+
+    </div>
+</div>
+</div>
+</div>

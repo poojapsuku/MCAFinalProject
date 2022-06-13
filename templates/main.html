@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+
+{% block styles %}
+
+<link rel="stylesheet"  href="{{url_for('.static', filename='css/util.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='css/main.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+<link rel="stylesheet"  href="{{url_for('.static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='vendor/animate/animate.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='vendor/select2/select2.min.css')}}">
+    <link rel="stylesheet"  href="{{url_for('.static', filename='images/icons/favicon.ico')}}">
+
+{% endblock %}
+
+
+</head>
+
+<div class="bg-contact2" style="background-image: url('/static/images/bg-02.jpeg');">
+<div class="container-contact2">
+    <div class="wrap-contact2">
+
+
+        <form action="http://127.0.0.1:5000/res" method="POST" class="contact2-form validate-form">
+			<span class="contact2-form-title">
+				Student Dropout Prediction
+			</span>
+
+
+
+<div>
+
+	<div class="wrap-input2 validate-input" data-validate = "Message is required">
+		<input type="number" class="input2" name="income"></input>
+		<span class="focus-input2" data-placeholder="Income in Thousands ( eg: 60 for 60k)"></span>
+	</div>
+
+			<div class="wrap-input2 validate-input" data-validate = "Message is required">
+		<input type="number" class="input2" name="disability"></input>
+		<span class="focus-input2" data-placeholder="Disability ( 0 / 1 )"></span>
+		</div>
+
+		<div class="wrap-input2 validate-input" data-validate = "Message is required">
+		<input type="number" class="input2" name="class"></input>
+		<span class="focus-input2" data-placeholder="Class ( 4 / 5 / 6 / 7 )"></span>
+		</div>
+
+		<div class="wrap-input2 validate-input" data-validate = "Message is required">
+		<input type="number" class="input2" name="m1"></input>
+		<span class="focus-input2" data-placeholder="Mark 1"></span>
+		</div>
+
+		<div class="wrap-input2 validate-input" data-validate = "Message is required">
+		<input type="number" class="input2" name="m2"></input>
+		<span class="focus-input2" data-placeholder="Mark 2"></span>
+		</div>
+
+		<div class="wrap-input2 validate-input" data-validate = "Message is required">
+		<input type="number" class="input2" name="m3"></input>
+		<span class="focus-input2" data-placeholder="Mark 3"></span>
+		</div>
+
+		<div class="wrap-input2 validate-input" data-validate = "Message is required">
+		<input type="number" class="input2" name="attendence"></input>
+		<span class="focus-input2" data-placeholder="Attendence percentage"></span>
+		</div>
+
+</div>
+
+
+
+
+
+	<div class="wrap-contact2-form-btn">
+		<div class="contact2-form-bgbtn"></div>
+		<button class="contact2-form-btn" type="submit">
+			Check dropout
+		</button>
+	</div>
+
+
+
+
+
+</form>
+</div>
+</div>
+</div>
+
+
+</html>
